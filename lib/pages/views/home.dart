@@ -12,6 +12,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color.fromARGB(252, 3, 33, 64),
         appBar: AppBar(),
         body: Container(
           width: MediaQuery.sizeOf(context).width,
@@ -21,10 +22,11 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                'Candle',
+                'CANDLE',
+                style: TextStyle(fontSize: 24, color: Colors.white),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 9.0),
+                padding: const EdgeInsets.only(top: 9),
                 child: Container(
                     width: MediaQuery.sizeOf(context).width,
                     height: MediaQuery.sizeOf(context).height * 0.30,
@@ -41,19 +43,60 @@ class _MyHomePageState extends State<MyHomePage> {
                         width: MediaQuery.sizeOf(context).width * 0.30,
                         height: MediaQuery.sizeOf(context).height * 0.30,
                       ),
-                      Text('descriçao'),
-                      Text('R\$30,00')
+                      SizedBox(
+                          child: Text(
+                        'Vela Luxo',
+                        style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold),
+                      )),
+                      Text('Fragrância Algodão',
+                          style: TextStyle(
+                              fontSize: 10,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold)),
+                      Text(
+                        'R\$130,00',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold),
+                      )
                     ],
                   ),
-                  Column(
+                  Row(
                     children: [
-                      Image.asset(
-                        'assets/vela3.jpeg',
-                        width: MediaQuery.sizeOf(context).width * 0.30,
-                        height: MediaQuery.sizeOf(context).height * 0.30,
+                      Column(
+                        children: [
+                          Image.asset(
+                            'assets/vela3.jpeg',
+                            width: MediaQuery.sizeOf(context).width * 0.30,
+                            height: MediaQuery.sizeOf(context).height * 0.30,
+                          ),
+                          Text(
+                            'Vela Rústico',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'Crie a melhor Atmosfera',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'R\$250,00',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold),
+                          )
+                        ],
                       ),
-                      Text('descriçao'),
-                      Text('R\$30,00')
                     ],
                   ),
                   Column(
@@ -63,8 +106,25 @@ class _MyHomePageState extends State<MyHomePage> {
                         width: MediaQuery.sizeOf(context).width * 0.30,
                         height: MediaQuery.sizeOf(context).height * 0.30,
                       ),
-                      Text('descriçao'),
-                      Text('R\$30,00')
+                      Text('Vela Sereníssima',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold)),
+                      Text(
+                        "Em todos os momentos",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 10,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'R\$396,00',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold),
+                      )
                     ],
                   )
                 ],
