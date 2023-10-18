@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  provider: ^6.0.5
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -64,6 +66,33 @@ flutter:
     - assets/vela2.jpeg
     - assets/vela3.jpeg
     - assets/vela4.jpeg
+    - assets/flor.webp
+    - assets/lavanda.jpg
+    - assets/rosinha.jpeg
+    - assets/vela6.jpeg
+    - assets/vela7.jpeg
+    - assets/vela8.jpeg
+    - assets/vela9.jpg
+    - assets/vela10.png
+    - assets/vela11.webp
+    - assets/vela13.jpg
+    - assets/vela14.webp
+    -  assets/vela15.jpeg
+    -  assets/vela16.jpg
+    - assets/vela18.jpeg
+    - assets/vela19.jpeg
+    - assets/vela20.jpg
+    - assets/vela21.webp
+    - assets/logo1.png
+    - assets/carrinho.png
+    - assets/velarosa.jpeg
+    - assets/bandeiras.png
+     
+    
+    
+    
+
+
     
 
     
